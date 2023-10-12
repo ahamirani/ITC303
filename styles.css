@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.navigation-menu {
+    list-style: none;
+}
+
+.navigation-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation-menu li:last-child {
+    margin-right: 0;
+}
+
+.navigation-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Banner styles */
+.banner {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.key-features {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.key-features h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.feature img {
+    max-width: 80px;
+}
+
+.feature p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.call-to-action {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#get-started-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#get-started-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.social-media-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .navigation-menu {
+        display: none;
+    }
+
+    .navigation-menu.active {
+        display: block;
+        position: absolute;
+        background-color: #007BFF;
+        top: 70px;
+        right: 0;
+        padding: 10px;
+        text-align: right;
+    }
+
+    .navigation-menu.active li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
